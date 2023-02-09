@@ -23,7 +23,7 @@
             <nav class="flex-list">
             <a href="" class="logo"><span class="logo-color-1">WEB</span><span class="logo-color-dark">STUDIO</span></a>
             <ul class="navigation-general flex-list">
-                <li><a href="./index.html" class="navigation studio">Studio</a></li>
+                <li><a href="./index.html" class="navigation current studio">Studio</a></li>
                 <li><a href="./portfolio.html" class="navigation">Portfolio</a> </li>
                 <li><a href="" class="navigation">Contacts</a></li>
             </ul>
@@ -40,8 +40,19 @@
         <!-- hero -->
         <div class="hero">
             <h1 class="title">Effective Solutions
-                for Your Business</h1>
-            <button type="button" class="button-main">Order Servic</button>
+                for Your Business
+            </h1>
+
+            <button type="button" class="button-main" data-modal-open>Order Servic</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="close-btn" type="button" data-modal-close>
+                        <svg class="close-icon" width="8" height="8">
+                            <use href="./images/close-black.svg#close-black"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
         <!-- section 1/2 -->
        <section class="section-two">
@@ -355,5 +366,6 @@
         </div>
         
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
