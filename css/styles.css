@@ -224,7 +224,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    margin-left: 340px;
+    margin-left: 360px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .close-icon{
@@ -372,34 +376,21 @@ margin-bottom: 8px;
     height: 88px;
     border-radius: 4px;
     border: 1px solid #8E8F99;
-    fill: #8E8F99; 
+    color: #8E8F99; 
 
 }
 .link-h:hover,
 .link-h:focus{
-    border:1px solid var(--button-cl);
-    fill: var(--button-cl);
+    border:1px solid var(--focused-txt-cl);
+    color:var(--focused-txt-cl);
 
-    transition-property:border;
+    transition-property:border color;
     transition-duration:  250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-five{
-fill: var(--grey-txt-cl);
+fill: currentColor;
 }
-.link-h:hover .svg-five{
-    fill: var(--button-cl);
-    transition-property:color;
-    transition-duration:  250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link-h:focus .svg-five{
-    fill: var(--button-cl);
-    transition-property:color;
-    transition-duration:  250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* footer */
 .footer{
     background-color:var(--dark-txt-cl);
